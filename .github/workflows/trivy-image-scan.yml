@@ -38,7 +38,7 @@ jobs:
         if: always()
         run: |
           curl --fail-with-body \
-            -X POST "$http://35.202.90.152:8080//api/v2/import-scan/" \
+            -X POST "$http://35.202.90.152:8080/api/v2/import-scan/" \
             -H "Authorization: Token $005cb8db196eacd1b62dca62cb11d939749c1a34" \
             -F "scan_type=SARIF" \
             -F "engagement=$10" \
